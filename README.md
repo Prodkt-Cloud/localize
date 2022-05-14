@@ -86,7 +86,7 @@ By design, `lang` attributes on ancestor elements are ignored. This is for perfo
 First, install the library.
 
 ```bash
-npm install @tovutifunk/localize
+npm install @prodkt/localize
 ```
 
 Next, follow these steps to localize your components.
@@ -101,7 +101,7 @@ All translations must extend the `Translation` type and implement the required m
 
 ```ts
 // en.ts
-import type { Translation } from '@tovutifunk/localize';
+import type { Translation } from '@prodkt/localize';
 
 const translation: Translation = {
   $code: 'en',
@@ -167,7 +167,7 @@ You can use the `LocalizeController` with any library that supports [Lit's React
 ```ts
 import { LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import { LocalizeController } from '@tovutifunk/localize/dist/lit.js';
+import { LocalizeController } from '@prodkt/localize/dist/lit.js';
 
 @customElement('my-element')
 export class MyElement extends LitElement {
